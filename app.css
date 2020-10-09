@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    background: rgb(111, 208, 224);
+    background: linear-gradient(0deg,rgb(111, 208, 224) 0%, rgb(171, 228, 167) 100%);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Frijole', cursive;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 650px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media (min-width: 920px) {
+    h1 {
+        font-size: 8em;
+    }
+}
+
+p {
+    font-weight: 100;
+}
+
+/* Grid Styles */
+#grid {
+    background-size: cover;
+    display: flex;
+    margin: 2em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    flex-wrap: wrap;
+}
+
+.grid-item {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+}
+
+.grid-item:nth-child(1){
+    background: #009687f5;
+}
+
+.grid-item:nth-child(3){
+    background: #dc7657f5;
+}
+
+.grid-item:nth-child(5){
+    background: #4bb3c1fa;
+}
+
+.grid-item:nth-child(7){
+    background: #fac069f9;
+}
+
+.grid-item:nth-child(11){
+    background: #67a866f9;
+}
+
+.grid-item:nth-child(13){
+    background: #b94169fa;
+}
+
+.grid-item:nth-child(15){
+    background: #7f62b3fa;
+}
+
+.grid-item:nth-child(17){
+    background: #9fc376f9;
+}
+
+.grid-item:nth-child(9){
+    background: #677bcbfa;
+}
+
+.grid-0, .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-9{
+    text-align: center;
+}
+
+/* show full details on the ui */
+.card-0, .card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7, .card-9{
+    display: none;
+    color: white;
+    font-weight: bold;
+    background: rgba(000,000,000, .3);
+}
+
+.card-0:hover, .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover, .card-6:hover, .card-7:hover, .card-9:hover {
+    cursor: pointer;
+}
+
+.facts {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+@media (min-width: 550px) {
+    #grid div {
+        width: calc(100% / 3);
+    }
+}
+
+.grid-item h3 {
+    font-size: 2em;
+    color: #eee;
+}
+
+.grid-item img {
+    max-width: 100%;
+    padding-bottom: 1em;
+}
+
+.grid-item p {
+    background: rgba(000,000,000, .3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.8em 0.8em 1.8em;
+    margin:0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Form Styles */
+.form-container {
+    background: #eee;
+    padding: 1.3em;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 0.3em;
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+}
+
+input {
+    padding: 0.7em;
+    background: #fff;
+    border: 0;
+}
+
+.form-field__short {
+    width: 25%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.form-field__full {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    display: block;
+}
+
+#btn {
+    display: inline-block;
+    background: #ccc;
+    padding: 0.8em;
+    margin: 1.2em auto;
+    transition: ease 0.3s all;
+}
+
+#btn:hover {
+    background: #777;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Footer */
+.fine-print {
+    display: block;
+    font-size: 0.7em;
+}
+
+/* Dino Card Styles */
+.dino-image, .human-image {
+    width: 250px;
+    height: 250px;
+}
