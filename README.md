@@ -1,3 +1,3 @@
 ## To Run Project
-First clone this repository
-Then run 'npx serve' to start the local dev server
+1. First clone this repository
+2. Then run 'npx serve' to start the local dev server
